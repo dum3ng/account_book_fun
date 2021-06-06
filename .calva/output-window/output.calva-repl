@@ -1,0 +1,45 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Connecting ...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉shadow.user꞉> 
+; Creating cljs repl session...
+; Connecting cljs repl: shadow-cljs...
+;   The Calva Connection Log might have more connection progress information.
+; Connected session: cljs, repl: node-repl
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+#'account-book-fun.parser/parse-csv
+cljs꞉account-book-fun.parser꞉> 
+(+ 3 4)
+7
+cljs꞉account-book-fun.parser꞉> 
+#'account-book-fun.parser/parse-csv
+cljs꞉account-book-fun.parser꞉> 
+(parse-csv cat-data)
+({"id" "1bcddudhmh", "type" "0", "name" "车贷"} {"id" "hc5g66kviq", "type" "0", "name" "车辆保养"})
+cljs꞉account-book-fun.parser꞉> 
+#'account-book-fun.parser-test/parser-csv-test
+cljs꞉account-book-fun.parser-test꞉> 
+(cljs.test/run-tests)
+
+Testing account-book-fun.parser-test
+{type 0, time 1561910400000, category 8s0p77c323, amount 5400}
+
+Ran 1 tests containing 1 assertions.
+0 failures, 0 errors.
+nil
+cljs꞉account-book-fun.parser-test꞉> 
