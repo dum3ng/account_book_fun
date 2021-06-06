@@ -12,5 +12,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="clojure-1.10.1" level="project" />
+    <orderEntry type="library" name="re-frame-1.2.0" level="project" />
+    <orderEntry type="library" name="clojurescript-1.10.844" level="project" />
   </component>
 </module>
