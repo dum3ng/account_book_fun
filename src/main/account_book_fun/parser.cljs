@@ -26,4 +26,10 @@
          header (first rows)
          keys (split header)
          data (rest rows)]
-     (map #(zipmap keys  (split %)) data))))
+     (->> (map #(zipmap keys (split %)) data)
+          (map #(->> %
+                     (map (fn [[k v]] (if-let [t (get transformers k)]
+                                        [k (t v)]
+                                        [k v])))
+                     (into {})))
+          ))))
